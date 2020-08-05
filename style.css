@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vw;
+    background: rgb(235,235,232);
+}
+
+.hinata {
+    animation: fly 1s infinite  alternate;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.face {
+    width: 300px;
+    height: 350px;
+    background: rgb(30, 41, 65);
+    position: absolute;
+    /*border-radius: 90% 55% 10% 65%;*/
+    border-radius: 61% 39% 45% 55% / 56% 77% 23% 44%;
+    top:-163px;
+    left: -145px;
+    transform: rotate(-5deg);
+}
+
+.tail1 {
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    background: rgb(30, 41, 65);
+    border-radius: 100% 0% 100% 0% / 84% 0% 100% 16%;
+    top: 80px;
+    left: 110px;
+    transform: rotate(-20deg);
+}
+
+.tail2 {
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    background: rgb(30, 41, 65);
+    border-radius: 100% 0% 100% 0% / 84% 0% 100% 16%;
+    top: 70px;
+    left: 99px;
+    transform: rotate(-20deg);
+}
+
+.eye1 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: white;
+    border-radius: 50% 50% 50% 50%;
+    border-color: brown;
+    top: -100px;
+    left: -70px;
+}
+
+.eye2 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: white;
+    border-radius: 50% 50% 50% 50%;
+    border-color: brown;
+    top: -92px;
+    left: 5px;
+}
+
+.beak {
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    background: rgb(41, 24, 23);
+    border-radius: 58% 42% 100% 0% / 100% 37% 63% 0%;
+    top: -86px;
+    left: -65px;
+    transform: rotate(35deg);
+}
+
+.hair {
+    width: 250px;
+    height: 225px;
+    position: absolute;
+    background: #E67E28;
+    top: -250px;
+    left: -100px;
+    clip-path: polygon(32% 28%, 45% 0%, 62% 21%, 74% 11%, 
+    73% 28%, 100% 30%, 78% 42%, 100% 60%, 17% 32%, 17% 15%,
+    100% 60%, 87% 59%, 89% 69%, 81% 63%, 72% 77%, 69% 65%,
+    66% 74%, 56% 55%, 45% 70%, 38% 51%, 24% 69%, 24% 52%,
+    0% 62%, 14% 39%, 5% 39%, 15% 32%);
+}
+
+.leg1 {
+    width: 60px;
+    height: 65px;
+    position: absolute;
+    background: rgb(30, 41, 65);
+    border-radius: 48% 52% 6% 94% / 45% 90% 10% 55%;
+    top: 135px;
+    left: 10px;
+    transform: rotate(20deg);
+}
+
+.leg2 {
+    width: 60px;
+    height: 65px;
+    position: absolute;
+    background: rgb(30, 41, 65);
+    border-radius: 48% 52% 6% 94% / 45% 90% 10% 55%;
+    top: 125px;
+    left: 55px;
+    transform: rotate(20deg);
+}
+
+.foot1 {    
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: brown;
+    clip-path: polygon(44% 2%, 64% 33%, 91% 44%, 70% 39%, 
+    84% 62%, 66% 40%, 65% 63%, 61% 34%, 42% 4%);
+    top: 190px;
+    left: 5px;
+    transform: rotate(20deg);
+}
+
+.foot2 {    
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background: brown;
+    clip-path: polygon(44% 2%, 64% 33%, 91% 44%, 70% 39%, 
+    84% 62%, 66% 40%, 65% 63%, 61% 34%, 42% 4%);
+    top: 190px;
+    left: 53px;
+    transform: rotate(20deg);
+}
+
+.rightwing {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: rgb(30, 41, 65);
+    border-radius: 21% 79% 6% 94% / 21% 90% 10% 79%;
+    top: -20px;
+    left: 90px;
+    transform: rotate(-70deg);
+    animation: flapright 1s infinite  alternate;
+    transform-origin: left;
+}
+
+.leftwing {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: rgb(30, 41, 65);
+    border-radius: 21% 79% 6% 94% / 21% 90% 10% 79%;
+    top: -90px;
+    left: -60px;
+    transform: rotate(170deg);
+    animation: flapleft 1s infinite  alternate;
+    transform-origin: left;
+}
+
+@keyframes fly {
+    50% { transform: translateY(10px); }
+}
+
+@keyframes flapright {
+    50% { transform: rotate(20deg); }
+}
+
+@keyframes flapleft {
+    50% { transform: rotate(80deg); }
+}
